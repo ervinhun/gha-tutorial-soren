@@ -4,7 +4,8 @@ import { Layout, WelcomeHero } from "./components/layout";
 import { PostList } from "./components/post-list";
 
 function App() {
-  var posts = new Api().postList();
+  const posts: PostModel[] = new Api().postList();
+  console.log(posts);
   return (
     <Layout>
       <WelcomeHero></WelcomeHero>
